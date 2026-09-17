@@ -47,6 +47,16 @@ Vsaka kombinacija scenarija in okolja ima 25 ponovitev. Posamezna meritev vkljuÄ
 .\run-load-benchmarks.ps1
 ```
 
+### Dovoljenje za izvajanje skripte
+
+ÄŒe PowerShell zavrne zagon nepodpisane skripte, v trenutnem oknu izvedemo:
+
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+```
+
+Sprememba velja samo do zaprtja trenutnega PowerShell okna.
+
 Zagon samo scenarija `/simple` s petimi ponovitvami:
 
 ```powershell
