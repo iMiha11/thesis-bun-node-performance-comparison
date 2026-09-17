@@ -1,0 +1,33 @@
+services:
+  node-server:
+    build:
+      context: ./node-app
+      dockerfile: Dockerfile
+    container_name: node_benchmark_container
+    ports:
+      - "3000:3000"
+    cpus: 2.0
+    mem_limit: 2g
+    environment:
+      PORT: 3000
+      RUNTIME_NAME: node
+      DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data
+
+  bun-server:
+    build:
+      context: ./bun-app
+      dockerfile: Dockerfile
+    container_name: bun_benchmark_container
+    user: "0:0"
+    ports:
+      - "3001:3001"
+    cpus: 2.0
+    mem_limit: 2g
+    environment:
+      PORT: 3001
+      RUNTIME_NAME: bun
+      DATA_DIR: /app/data
+    volumes:
+      - ./data:/app/data

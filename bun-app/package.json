@@ -1,0 +1,12 @@
+{
+  "name": "bun-benchmark-app",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun run src/index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3"
+  }
+}
