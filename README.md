@@ -5,7 +5,7 @@ Projekt vsebuje aplikaciji, merilne skripte in rezultate diplomskega dela. Prime
 ## Struktura
 
 ```text
-DiplomaBenchmark/
+bun-node-performance-comparison-thesis/
 ├── README.md
 ├── docker-compose.yml
 ├── run-load-benchmarks.ps1
@@ -19,7 +19,7 @@ DiplomaBenchmark/
 │   ├── app/server.mjs
 │   └── results/
 └── results/
-    └── 20260904_052953/
+    └── load-tests-20260904-052953/
 ```
 
 ## Obremenitveni testi
@@ -69,7 +69,7 @@ Ustavitev:
 docker compose down
 ```
 
-Rezultati se shranijo v časovno označeno podmapo znotraj `results`. Končna serija meritev je v `results/load-tests-20260904`.
+Rezultati se shranijo v časovno označeno podmapo znotraj `results`. Končna serija meritev je v `results/load-tests-20260904-052953`.
 
 ## Čas zagona aplikacije
 
@@ -91,7 +91,7 @@ Rezultati se shranijo v `startup-benchmark/results`:
 
 ## Rezultati obremenitvenih testov
 
-Mapa `results/load-tests-20260904` vsebuje:
+Mapa `results/load-tests-20260904-052953` vsebuje:
 
 - surove rezultate Autocannona
 - meritve `docker stats`
