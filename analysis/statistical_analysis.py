@@ -1,15 +1,8 @@
-#!/usr/bin/env python3
 """Ponovljiva statistična analiza meritev iz diplomske naloge.
-
-Skripta reproducira opisno in sklepno statistiko za:
-
 * čas zagona aplikacije (100 parov),
 * latenco in prepustnost (25 parov na scenarij),
 * ocenjeni procesorski čas na 1000 uspešnih zahtev,
 * povprečno porabo delovnega pomnilnika.
-
-Privzeto je namenjena lokaciji ``analysis/statistical_analysis.py`` v korenu
-repozitorija. Poti je mogoče spremeniti z argumenti ukazne vrstice.
 """
 
 from __future__ import annotations
