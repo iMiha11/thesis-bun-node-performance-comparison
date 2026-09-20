@@ -1,0 +1,31 @@
+STATISTIČNA ANALIZA MERITEV NODE.JS IN BUN.JS
+================================================
+
+Metodološka pravila
+- čas zagona: 100 parov meritev
+- obremenitveni testi: 25 parov na scenarij
+- viri: prvih 13 vzorcev docker stats na ponovitev
+- test: dvostranski Wilcoxonov test predznačenih rangov
+- raven statistične značilnosti: 0,05
+- H2: Holmova prilagoditev dveh primerjav za /simple
+- H3: ločeni Holmovi prilagoditvi šestih CPU in šestih RAM primerjav
+
+H1 – čas zagona
+Node.js: 124,31 ms
+Bun.js: 33,95 ms
+Povprečna parna razlika (Bun − Node): -90,36 ms
+95-% IZ razlike: [-92,64; -88,09] ms
+W = 0; p < 0,001
+Sklep H1: potrjena
+
+H2 – /simple
+Latenca, Bun − Node: 0,052 ms (1,26 %); W = 60; pHolm = 0,010
+Prepustnost, Bun − Node: -294,11 zahtev/s (-1,35 %); W = 54; pHolm = 0,005
+Sklep H2: ni potrjena
+
+H3 – procesor in delovni pomnilnik
+Procesorski del: podprt
+Pomnilniški del: ni podprt
+Sklep H3: ni potrjena
+
+Podrobne vrednosti so zapisane v spremljajočih datotekah CSV.

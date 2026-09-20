@@ -1,0 +1,2 @@
+n_pairs,node_mean_ms,node_median_ms,node_sd_ms,node_min_ms,node_max_ms,node_p95_ms,node_p99_ms,bun_mean_ms,bun_median_ms,bun_sd_ms,bun_min_ms,bun_max_ms,bun_p95_ms,bun_p99_ms,mean_difference_bun_minus_node_ms,relative_change_percent,difference_ci95_lower_ms,difference_ci95_upper_ms,wilcoxon_w,p_value,bun_faster_pairs
+100,124.31,123.33,6.87,111.41,142.61,134.60,140.25,33.95,32.16,10.14,24.87,97.74,40.98,92.00,-90.36,-72.69,-92.64,-88.09,0.00,<0.001,100
