@@ -5,7 +5,7 @@ Projekt vsebuje aplikaciji, merilne skripte in rezultate diplomskega dela. Prime
 ## Struktura
 
 ```text
-bun-node-performance-comparison-thesis/
+thesis-bun-node-performance-comparison/
 ├── README.md
 ├── docker-compose.yml
 ├── run-load-benchmarks.ps1
@@ -16,10 +16,20 @@ bun-node-performance-comparison-thesis/
 │   └── test-10mb.txt
 ├── startup-benchmark/
 │   ├── benchmark.py
-│   ├── app/server.mjs
+│   ├── app/
+│   │   └── server.mjs
 │   └── results/
-└── results/
-    └── load-tests-20260904-052953/
+│       ├── startup_measurements.csv
+│       ├── startup_summary.csv
+│       └── test_environment.txt
+├── results/
+│   └── load-tests-20260904-052953/
+├── analysis/
+│   ├── statistical_analysis.py
+│   ├── requirements.txt
+│   ├── graph-scripts/
+│   └── output/
+└── figures/
 ```
 
 ## Obremenitveni testi
@@ -40,6 +50,7 @@ Vsaka kombinacija scenarija in okolja ima 25 ponovitev. Posamezna meritev vklju�
 - Windows PowerShell ali PowerShell 7
 - Docker Desktop
 - Node.js in npm
+- Python 3 za statistično analizo in pripravo grafov
 
 ### Zagon
 
